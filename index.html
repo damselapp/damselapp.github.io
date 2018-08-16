@@ -77,7 +77,7 @@
     </div>
     <div class="splash-foot">
       <div class="more-wrap">
-        <a href="#tell-me-more" id="top-anchor" rel="" class="tell-me-more">Request Invite</a>
+        <a href="" id="top-anchor" rel="" class="open-popup tell-me-more">Request Invite</a>
       </div>
     </div>
 
@@ -165,7 +165,7 @@
     <div class="outer-container">
       <h2 id="notice">Ready to be amazing?</h2>
       <form id="form" method="get" target="" action="" accept-charset="UTF-8" class="main-cta" onsubmit="submitted=true;">
-        <button type="" id="myEmailButton" class="btn-main-cta" >Request Invite</button>
+        <button type="" class="btn-main-cta open-popup" >Request Invite</button>
         <br>
       </form> 
     </div>
@@ -191,8 +191,16 @@
    
     <!-- Mailchimp -->
 
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"0147bb4f3d34542040ec5bae0","lid":"44266e231b"}) })</script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
+    <script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"0147bb4f3d34542040ec5bae0","lid":"44266e231b"}) })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+
+    document.getElementsByClassName("open-popup").onclick = function() {showMailingPopUp()};
+    </script>
 
     <script>
     // Top bar removed for now.
