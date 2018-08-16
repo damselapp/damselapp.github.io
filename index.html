@@ -77,7 +77,7 @@
     </div>
     <div class="splash-foot">
       <div class="more-wrap">
-        <a href="" id="top-anchor" rel="" class="open-popup tell-me-more">Request Invite</a>
+        <a href="#tell-me-more" id="top-anchor" rel="" class="tell-me-more">Request Invite</a>
       </div>
     </div>
 
@@ -165,7 +165,7 @@
     <div class="outer-container">
       <h2 id="notice">Ready to be amazing?</h2>
       <form id="form" method="get" target="" action="" accept-charset="UTF-8" class="main-cta" onsubmit="submitted=true;">
-        <button type="" class="btn-main-cta open-popup" >Request Invite</button>
+        <button type="" id="open-popup" class="btn-main-cta" >Request Invite</button>
         <br>
       </form> 
     </div>
@@ -199,7 +199,7 @@
         document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
     };
 
-    document.getElementsByClassName("open-popup").onclick = function() {showMailingPopUp()};
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
     </script>
 
     <script>
