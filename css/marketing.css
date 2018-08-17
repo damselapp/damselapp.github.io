@@ -322,28 +322,29 @@ footer {
         left: 0;
         right: 0; 
     }
-    .downArrow {
-        position: absolute;
-        height: 22px;
-        top: 94%;
-        left: 50%;
-        z-index: 9999;
-        fill: none;
-        stroke: #c2c2c2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 4px;
-        fill-rule: evenodd;
-        -webkit-animation-name: bounce;
-        animation-name: bounce;
-        -webkit-animation-duration: 1.5s;
-        animation-duration: 1.5s;
-        -webkit-transition: all cubic-bezier(.8,.1,.27,1);
-        -o-transition: all cubic-bezier(.8,.1,.27,1);
-        transition: all cubic-bezier(.8,.1,.27,1);
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-    }
+
+
+.arrow-container .icon {
+    background: url(../img-assets/118738.png) no-repeat;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: auto;
+    top: 270px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-animation-name: bob;
+    animation-name: bob;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-transition: all cubic-bezier(.8,.1,.27,1);
+    -o-transition: all cubic-bezier(.8,.1,.27,1);
+    transition: all cubic-bezier(.8,.1,.27,1);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
 
       @media screen and (min-width: 320px) and (max-width: 650px) {
         .marketing .logo-container .logo {
@@ -450,7 +451,7 @@ footer {
       bottom: -150px; }
   .marketing .main-cta {
     width: 600px;
-    margin: 275px auto 0; }
+    margin: 126px auto 0; }
     @media screen and (min-width: 320px) and (max-width: 650px) {
       .marketing .main-cta {
         width: 90%; } }
@@ -570,7 +571,7 @@ footer {
     padding-bottom: 68px; }
 
   .foot-cta {
-    background: url(../img-assets/flyover.jpg) no-repeat top;
+    /*background: url(../img-assets/flyover.jpg) no-repeat top;*/
     /*background: url(../img-assets/takeoff2.jpg) no-repeat 0 286px;*/
     background-size: cover;
 /*    background-attachment: fixed;
