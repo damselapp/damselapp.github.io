@@ -280,7 +280,7 @@ footer {
       background: url(../img-assets/logo-large.png) no-repeat;
       background-size: 130px;
       width: 130px;
-      height: 70px;
+      height: 40px;
       position: absolute;
       margin: auto;
       top: 0;
@@ -349,12 +349,15 @@ footer {
       @media screen and (min-width: 320px) and (max-width: 650px) {
         .marketing .logo-container .logo {
           width: 120px;
-          height: 70px;
-          background-size: 120px; } }
+          height: 40px;
+          background-size: 120px; } 
+        }
   .marketing .logo-container, .marketing .splash-foot {
     height: 32.5%;
     width: 100%;
     min-height: 200px; }
+
+
   @media screen and (min-width: 320px) and (max-width: 650px) {
     .marketing .logo-container {
       height: 15%;
@@ -374,10 +377,17 @@ footer {
       bottom: 0;
       right: 0;
       z-index: 999; }
+
+    .marketing .splash-foot {
+      position: absolute;
+      bottom: 15px;
+    }
       @media screen and (min-width: 320px) and (max-width: 650px) {
-        .marketing .splash-foot .more-wrap {
-          /*display: none; */
-          } }
+        .marketing .splash-foot  {
+        position: absolute;
+        bottom: 35px;
+              } 
+           }
     .marketing .splash-foot .tell-me-more {
       padding: 12px 32px;
       border-radius: 3px;
