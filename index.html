@@ -11,7 +11,6 @@
     <meta name="author" content="Damsel.app" />
     <meta name="copyright" content="Damsel" />
     <meta name="application-name" content="Damsel" />
-<!--     <meta name="google-site-verification" content="GUdKnHsUMNvZrWFGae5DxoomiCCuELuC4jahG8X61Hw" /> -->
     <meta property="og:title" content="Damsel - Find your next adventure." />
     <meta property="og:locale" content="en_US" />  
     <meta property="fb:app_id" content="" />
@@ -26,6 +25,16 @@
     <meta name="twitter:description" content="The dating app for explorers. Match with anyone anywhere. Explore the world together." />
     <meta name="twitter:image" content="img-assets/socialthumbmail.jpg" />  
  
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123199092-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123199092-1');
+    </script>
 
     <!-- <link rel="icon" href="http://www.thebreakupapp.com/wp-content/uploads/2016/04/cropped-favicon-32x32.png" sizes="32x32" /> -->
     <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> -->
@@ -207,32 +216,31 @@
 
     <script>
     // Top bar removed for now.
-      $(document).scroll(function() { // show/hides top bar on scroll
-       var y = $(this).scrollTop();
-       if (y > 550) {
-         $(".top-bar").css("top", "0");
-       } else {
-         $(".top-bar").css("top", "-70px");
-       }
-      });
+      // $(document).scroll(function() { // show/hides top bar on scroll
+      //  var y = $(this).scrollTop();
+      //  if (y > 550) {
+      //    $(".top-bar").css("top", "0");
+      //  } else {
+      //    $(".top-bar").css("top", "-70px");
+      //  }
+      // });
 
-      // Locks scrolling on first load (at the top of the page), but releases scrolling once 'tell me more' is clicked (or page refreshed anywhere except the top of the page).
-      $(document).ready(function(){
+      // // Locks scrolling on first load (at the top of the page), but releases scrolling once 'tell me more' is clicked (or page refreshed anywhere except the top of the page).
+      // $(document).ready(function(){
 
-          $('.get-app').click(function(){
-          $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
-          }, 500);
-          return false;
-        });
+      //     $('.get-app').click(function(){
+      //     $('html, body').animate({
+      //       scrollTop: $( $(this).attr('href') ).offset().top
+      //     }, 500);
+      //     return false;
+      //   });
 
-      });
+      // });
 
 
 
     </script>
 
-    <!-- [google analytics] -->
 
     <!-- Hotjar Tracking Code -->
 
