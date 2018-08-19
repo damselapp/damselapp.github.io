@@ -884,5 +884,10 @@ footer {
     left: -50px;
 }
 
-
+@-moz-document url-prefix() {
+    .marketing .splash-foot {
+    position: absolute;
+    bottom: 40px;
+  }
+}
 
