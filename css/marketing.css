@@ -235,7 +235,7 @@ footer {
     @media screen and (min-width: 320px) and (max-width: 650px) {
       .marketing h1 {
         font-size: 2.8em;
-        margin-bottom: 20px;
+        margin: 0px 20px 20px;
          } }
   .marketing h2 {
     font-size: 1.8em;
@@ -614,7 +614,7 @@ footer {
       }
       .marketing .three-points, .marketing .feature-checks {
       padding-top: 40px;
-      padding-bottom: 0px; 
+      padding-bottom: 40px; 
       }
       .marketing .faq {
        padding-top: 80px;
