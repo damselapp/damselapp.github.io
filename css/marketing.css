@@ -138,6 +138,7 @@ p.lead {
   font-family: "open sans", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   text-align: center;
   margin-top: 10px;
+  /* #79869f */ 
   color: #354054;
   -webkit-font-smoothing: antialiased; }
 p.center {
@@ -638,6 +639,7 @@ footer {
     .marketing .three-points h2 {
       margin: 80px auto 100px;
      }
+
     .marketing .three-points .first-image, .marketing .three-points .second-image, .marketing .three-points .third-image {
       height: 246px;
       width: 246px;
@@ -645,7 +647,7 @@ footer {
       background: url("../images/1.2.jpg") no-repeat center center/246px;
       margin: 10px auto 30px; }
 
-      
+
     .marketing .three-points .first-image {
       background: url("../img-assets/763724.svg") no-repeat center center/146px; }
     .marketing .three-points .second-image {
@@ -653,13 +655,13 @@ footer {
     .marketing .three-points .third-image {
       background: url("../img-assets/1009958.svg") no-repeat center center/146px; }
 
-    .marketing .three-points .fourth-image {
+/*    .marketing .three-points .fourth-image {
       background: url("../img-assets/one.svg") no-repeat center center/136px; }
     .marketing .three-points .fifth-image {
       background: url("../img-assets/two.svg") no-repeat center center/136px; }
     .marketing .three-points .sixth-image {
       background: url("../img-assets/three.svg") no-repeat center center/136px; }
-
+*/
 
   .marketing .third {
     float: left;
