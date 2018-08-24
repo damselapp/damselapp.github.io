@@ -239,10 +239,14 @@ footer {
          } }
   .marketing h2 {
     font-size: 1.8em;
-    color: #3b4246; }
+    color: #3b4246; 
+    width: 90%;
+    margin: auto;
+    }
     @media screen and (min-width: 320px) and (max-width: 650px) {
       .marketing h2 {
-        width: 90%; } 
+        width: 90%;
+         } 
       .marketing .feature-list h2 {
         width: 100%;
       }
