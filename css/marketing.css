@@ -549,6 +549,23 @@ footer {
     /*background-position: bottom;*/
   }
 
+    .marketing .break-content {
+    width: 100%;
+    margin: 0 auto;
+    /* height: 100%; */
+    min-height: 390px;
+    position: relative;
+    z-index: 5;
+    background: url(../img-assets/castle.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* background-position: 62% 0; */
+    /* background-position: bottom; */
+    background-attachment: fixed;
+}
+  }
+
+
     /* Use larger background for larger screens */
       @media screen and (min-width: 1200px) {
        .marketing .splash-content {
@@ -557,6 +574,7 @@ footer {
           background-size: cover;
         }
     }
+
 
     .marketing .splash-content .main-center {
       text-align: center;
@@ -578,7 +596,17 @@ footer {
     background: rgba(0, 135, 226, 0.05); }*/
   .marketing .features, .marketing .three-points, .marketing .feature-checks, .marketing .faq, .marketing .paragraph-text, .marketing .foot-cta {
     padding-top: 100px;
-    padding-bottom: 68px; }
+    padding-bottom: 160px; }
+
+    .break-content h2{
+      text-align: center;
+      color: whitesmoke;
+      font-size: 37px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
   .foot-cta {
     /*background: url(../img-assets/flyover.jpg) no-repeat top;*/
@@ -597,6 +625,7 @@ footer {
   .marketing .features {    
     /*padding-top: 200px;   */
     position: relative; 
+    background-color: #fdfdfd;
     }
 
     @media screen and (min-width: 320px) and (max-width: 650px) {
@@ -634,9 +663,11 @@ footer {
         width: 95%;
         height: auto; } }
   .marketing .three-points {
-    text-align: center; }
+    text-align: center;
+    background-color: #fdfdfd;
+     }
     .marketing .three-points h2 {
-      margin: 80px auto 100px;
+          margin: 10px auto 30px;
      }
 
     .marketing .three-points .first-image, .marketing .three-points .second-image, .marketing .three-points .third-image {
@@ -719,7 +750,7 @@ footer {
     top: 13px;
     left: -300px;
     width: 240px;
-    height: 365px;
+    height: 235px;
     -webkit-animation: bob 3s ease-in-out infinite;
     -moz-animation: bob 3s ease-in-out infinite;
     animation: bob 3s ease-in-out infinite; }
@@ -728,8 +759,65 @@ footer {
         background-position: top 0 left 65%;
        }
       .marketing .balloon {
-        display: none; } }
-@-webkit-keyframes bob {
+        display: none; 
+        /* show in future */
+         } }
+    
+  .slider {
+  max-width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide1 {
+  background: url('../img-assets/tour1.jpg') no-repeat center;
+      background-size: cover;
+    animation:fade 30s infinite;
+    -webkit-animation:fade 30s infinite;
+
+} 
+.slide2 {
+  background: url('../img-assets/tour2.jpg') no-repeat center;
+      background-size: cover;
+    animation:fade2 30s infinite;
+    -webkit-animation:fade2 30s infinite;
+}
+.slide3 {
+    background: url('../img-assets/tour3.jpg') no-repeat center;
+      background-size: cover;
+    animation:fade3 30s infinite;
+    -webkit-animation:fade3 30s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+   /* img.tours {
+    height: auto;
+    width: 240px;}*/
+/*@-webkit-keyframes bob {
   50% {
     -webkit-transform: translateY(-10px); } }
 @-moz-keyframes bob {
@@ -741,20 +829,21 @@ footer {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
-    transform: translateY(-10px); } }
+    transform: translateY(-10px); } }*/
   .marketing .balloon:after {
     content: "";
     width: 100%;
     height: 100%;
-    background: url("../img-assets/991786.svg") no-repeat center center/168px;
+    /*background: url("../img-assets/adventure-preview.jpg") no-repeat center center/168px;*/
     position: absolute;
-    top: -60px;
+    top: -70px;
     right: 0;
-    -webkit-transform: rotate(-5deg);
+/*    -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
-    transform: rotate(-5deg); }
+    transform: rotate(-5deg); */
+  }
   .marketing .clouds1 {
     position: absolute;
     top: -120px;
@@ -887,6 +976,8 @@ footer {
 */
   .marketing section.paragraph-text.bottom-part {
     padding: 100px 0;
+    background-color: #fdfdfd;
+    border-top: 1px solid #E1E6EF;
   }
 
 .book {
